@@ -1,0 +1,107 @@
+$flex: flex;
+$around:  space-around;
+$between:  space-between;
+$rien : none;
+
+%cercle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+%tex_au_centre {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: $rien;
+}
+
+header {
+    background: url("img/background.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+
+    .first_div {
+        display: $flex;
+        li {
+            margin-right: 13%;
+        }
+    }
+
+    .home {
+        display: $flex;
+        align-content: row;
+        margin-left: 25%;
+    }
+
+    .corporation {
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+
+    .fa-chevron-left {
+        margin-top: 150px;
+        position: absolute;
+        border: 1px solid white;
+        width: 35px;
+        height: 25px;
+    }
+
+    .fa-chevron-right {
+        margin-top: 150px;
+        position: absolute;
+        right: 0;
+        border: 1px solid white;
+        width: 35px;
+        height: 25px;
+    }
+
+    .container {
+        @extend %tex_au_centre;
+        margin-top: 100px;
+    }
+
+    .cercle {
+        list-style: $rien;
+        display: $flex;
+        align-content: row;
+        justify-content: center;
+        margin-top: 170px;
+    
+
+        li{
+            @extend %cercle;
+            border: 1px solid white;
+            margin-left: 0.3%;
+        }
+
+        .cercle-white {
+            background: white;
+        }
+    }
+}
+
+.what {
+    @extend %tex_au_centre;
+    position: relative;
+}
+
+.second_cercle {
+    @extend %cercle;
+    border: 1px solid #EEEEEE;
+    position: absolute;
+    margin-left: 50%;
+    background: white;
+    top: -60px;
+}
+
+hr {
+    width: 10%;
+    margin-top: 70px;
+}

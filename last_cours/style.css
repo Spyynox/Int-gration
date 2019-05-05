@@ -1,0 +1,130 @@
+body {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.menu-container input {
+    display: none;
+}
+
+.menu-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.menu {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu button {
+    height: 150px;
+    width: 250px;
+    transform-origin: right bottom;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    left: -100px;
+}
+
+.menu button:nth-child(1) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(30deg) skewX(30deg);
+}
+
+.menu button:nth-child(2) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(90deg) skewX(30deg);
+}
+
+.menu button:nth-child(3) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(150deg) skewX(30deg);
+}
+
+.menu button:nth-child(4) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(210deg) skewX(30deg);
+}
+
+.menu button:nth-child(5) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(270deg) skewX(30deg);
+}
+
+.menu button:nth-child(6) {
+    display: block;
+    background-color: #f44336;
+    transform: rotate(330deg) skewX(30deg);
+}
+
+.menu button p {
+    right: 30px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu button:nth-child(1) p {
+    display: block;
+    transform: rotate(-30deg) skewX(-30deg);
+}
+
+.menu button:nth-child(2) p {
+    display: block;
+    transform: rotate(-90deg) skewX(-30deg);
+}
+
+.menu button:nth-child(3) p {
+    display: block;
+    transform: rotate(-150deg) skewX(-30deg);
+}
+
+.menu button:nth-child(4) p {
+    display: block;
+    transform: rotate(-210deg) skewX(-30deg);
+}
+
+.menu button:nth-child(5) p {
+    display: block;
+    transform: rotate(-270deg) skewX(-30deg);
+}
+
+.menu button:nth-child(6) p {
+    display: block;
+    transform: rotate(-230deg) skewX(-30deg);
+}
+
+.menu div {
+    height: 40px;
+    width: 40px;
+    background-color: #666666;
+    position: absolute;
+    border-radius: 50%;
+    top: 130px;
+    left: 130px;
+}
+
+.menu.second {
+    display: none;
+}
+
+.menu.second .item {
+
+}

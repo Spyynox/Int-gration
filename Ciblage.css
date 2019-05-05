@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	background-color: blue;
+	font-family: sans-serif;
+}
+body > label:first-of-type {
+	background-color: red;	
+}
+
+.main {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 80px;
+}
+
+.sur10 {
+	color: #14a6a9;
+	margin-left: 90%;
+}
+
+.Test {	
+background-color: #125ea4;
+	text-align: center;
+	width: 50%;
+	overflow: hidden;
+	box-shadow: 0 2px 5px 0 #000;
+	padding-bottom: 1000px;
+}
+h2 {
+	background-color: blue;
+	color: blue;
+	margin: 0;
+	padding: 30px 0 40px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 50px;
+	width: 140%;
+	margin-left: -20%;
+}
+
+input[type=radio] {
+	display: none;
+	background-color: white;
+} 
+
+label{
+	background-color: white;
+	display: block;
+	padding: 10px;
+	padding-right: 150px;
+	width: 500px;
+	margin-bottom: 7px;
+	text-align: left;
+}
+
+p {
+	color: #2BB5E7;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+h2 {
+	background-color: #f2e170;
+	color: blue;
+}
+
+h3 {
+	background-color: #14a6a9;
+	display: block;
+	padding: 10px;
+	padding-right: 150px;
+	width: 500px;
+	margin-bottom: 7px;
+	text-align: left;
+}
+
+input[type="radio"]:checked+label{ opacity: 1; }
+input[type="radio"]+label{ opacity: 0.5; }
+input[type="radio"]:indeterminate+label{ opacity: 1; }
+input[type="radio"]:hover+label{ opacity: 0.7; }
+.deuxiemetableau {
+	position: relative;
+}

@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("img/background_code.png");
+    background-size: cover;
+}
+
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background:#00AFDE;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.container {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: 1px 1px 10px #000000;
+    border-radius: 1px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.second-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    animation: move 2s linear 0.3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.second-container:hover {
+    bottom: 60px;
+    transition: 0.3s;
+}
+
+
+.container:hover {
+    transition: 0.3s;
+}
+/* .container:hover .social_network .facebook {
+    visibility: hidden;
+    animation: photo 2s linear 0.3s;
+    animation-iteration-count: infinite;
+    bottom: 0px;
+
+} */
+
+.second-container:hover .facebook {
+    animation: facebook 0.5s linear 0.3s forwards;
+    bottom: 0px;
+    position: absolute;
+}
+
+.second-container:hover .twitter {
+    animation: twitter 0.6s linear 0.4s forwards;
+    bottom: 0px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.second-container:hover .linkedin {
+    animation: linkedin 0.7s linear 0.6s forwards;
+    bottom: 0px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.second-container:hover .overflowing {
+    animation: overflowing 0.7s linear 0.75s forwards;
+    bottom: 0px;
+    position: absolute;
+    margin-left: 150px;
+}
+
+
+.second-container img {
+    height: 350px;
+    width: 300px;
+}
+
+
+.social_network {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    bottom: -30px;
+    animation-fill-mode: forwards;
+    width: 100%;
+    margin-left: 20%;
+    animation-delay: 3s;
+    /* overflow: visible; */
+}
+
+.social_network img {
+    height: 30px;
+    width: 30px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 100%;
+    color: white;
+}
+
+button {
+    margin:auto;
+    display:block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 3%;
+    border: orange;
+    background: orange;
+    color: white;
+    width: 170px;
+    border: block;
+}
+
+@keyframes photo {
+    0% {
+    }
+    100% {
+      visibility: visible;
+    }
+}
+
+@keyframes facebook {
+    0% {
+        visibility: hidden;
+        bottom: 0px;
+    }
+    100% {
+        visibility: visible;
+        bottom: 60px;
+    }
+}
+
+@keyframes twitter {
+    0% {
+        visibility: hidden;
+        bottom: 0px;
+    }
+    100% {
+        visibility: visible;
+        bottom: 60px;
+    }
+}
+
+@keyframes linkedin {
+    0% {
+        visibility: hidden;
+        bottom: 0px;
+    }
+    100% {
+        visibility: visible;
+        bottom: 60px;
+    }
+}
+
+@keyframes overflowing {
+    0% {
+        visibility: hidden;
+        bottom: 0px;
+    }
+    100% {
+        visibility: visible;
+        bottom: 60px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        height: 130vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    button {
+        margin-top: 10%;
+        height: 60px;
+        font-size: 20px;
+        width: 200px;
+    }
+
+    h1 {
+        margin-top: 25%;
+        font-size: 50px;
+    }
+
+    .image {
+        height: 350px;
+        width: 300px;
+    }
+
+    .container {
+        margin-top: 10%;
+        width: 280px;
+        height: 330px;
+    }
+    
+
+    .navbar {
+        font-size: 20px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    body {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        font-size: 9px;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 100px;
+        height: 130px;
+    }
+
+    .second-container {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        animation: none;
+        animation-fill-mode: none;
+    }
+
+    .second-container img {
+        width: 100px;
+        height: 130px;
+    }
+
+    .second-container:hover {
+        bottom: 0px;
+        transition: 0s;
+    }
+
+    .facebook {
+        display: none;
+    }
+    
+    .twitter {
+        display: none;
+    }
+    
+    .linkedin {
+        display: none;
+    }
+    
+    .overflowing {
+        display: none;
+    }
+
+    .mail_send {
+        margin-left: 40%
+    }
+} 
