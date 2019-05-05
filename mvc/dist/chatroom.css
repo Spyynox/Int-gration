@@ -1,0 +1,6 @@
+li {
+    background: -webkit-linear-gradient( blue, grey); 
+    background: -o-linear-gradient( blue, grey);
+    background: -moz-linear-gradient( blue, grey);
+    background: linear-gradient(to  blue, grey);
+}
